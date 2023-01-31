@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		BFA374DF29892173000E7701 /* cpp-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cpp-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA374E229892173000E7701 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BFA374EB29892860000E7701 /* LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +59,17 @@
 			isa = PBXGroup;
 			children = (
 				BFA374E229892173000E7701 /* main.cpp */,
+				BFA374ED2989286B000E7701 /* Linked List */,
 			);
 			path = "cpp-algorithm";
+			sourceTree = "<group>";
+		};
+		BFA374ED2989286B000E7701 /* Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				BFA374EB29892860000E7701 /* LinkedList.cpp */,
+			);
+			path = "Linked List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +103,7 @@
 				TargetAttributes = {
 					BFA374DE29892173000E7701 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -238,20 +249,35 @@
 		BFA374E729892173000E7701 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D9CAJN27UH;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		BFA374E829892173000E7701 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D9CAJN27UH;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
