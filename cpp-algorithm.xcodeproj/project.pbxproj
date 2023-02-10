@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BFA374E329892173000E7701 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFA374E229892173000E7701 /* main.cpp */; };
-		BFA374F0298B7AE7000E7701 /* DoublyLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFA374EE298B7AE7000E7701 /* DoublyLinkedList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF65F62A2996554E006339C7 /* Sorting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sorting.cpp; sourceTree = "<group>"; };
+		BF6959F9298E843E0032D2FD /* LinkedListTemplate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTemplate.cpp; sourceTree = "<group>"; };
 		BFA374DF29892173000E7701 /* cpp-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cpp-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA374E229892173000E7701 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BFA374EB29892860000E7701 /* LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
@@ -41,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF65F62B299655B0006339C7 /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				BF65F62A2996554E006339C7 /* Sorting.cpp */,
+			);
+			path = Sorting;
+			sourceTree = "<group>";
+		};
 		BFA374D629892173000E7701 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +71,7 @@
 			children = (
 				BFA374E229892173000E7701 /* main.cpp */,
 				BFA374ED2989286B000E7701 /* Linked List */,
+				BF65F62B299655B0006339C7 /* Sorting */,
 			);
 			path = "cpp-algorithm";
 			sourceTree = "<group>";
@@ -71,6 +81,7 @@
 			children = (
 				BFA374EB29892860000E7701 /* LinkedList.cpp */,
 				BFA374EE298B7AE7000E7701 /* DoublyLinkedList.cpp */,
+				BF6959F9298E843E0032D2FD /* LinkedListTemplate.cpp */,
 			);
 			path = "Linked List";
 			sourceTree = "<group>";
@@ -134,7 +145,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA374E329892173000E7701 /* main.cpp in Sources */,
-				BFA374F0298B7AE7000E7701 /* DoublyLinkedList.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
